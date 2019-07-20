@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background:url(/static/photos/dawn.jpg);
+    background-size:cover;
+    padding-bottom:350px;
+}
+
+#row{
+    position:relative;
+    left:20%;
+    height:50%;
+    width:70%;
+}
+
+
+
+#ct{
+    position:relative;
+    padding-left:10%;
+    padding-right:10%;
+    padding-bottom:10%;
+    padding-top:10%;
+    width:95%;
+    height:100%;
+    background-color:rgba(255,255,255,0.7);
+
+}
+
+
+#button{
+    width:100%;
+    color:white;
+    background-color:black;
+    border:black solid 1px;
+}
+
+
+
+
+.footer{
+    position:fixed;
+    width:100%;
+    height:50px;
+    border:1px solid#f8f9fa;
+    padding-top:1%;
+    bottom:0%;
+    text-align:center;
+    background-color: #eff2f7;
+}
+
+
+#main{
+    position:absolute;
+    top:10%;
+    width:100%;
+    height:100%;
+    border: 1px solid black;
+}
+
