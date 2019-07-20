@@ -9,18 +9,18 @@ root=os.getcwd()
 #------------------------------------------------------------------------------------------------
 #                                   DATABASE CONNECTIVITY
 #------------------------------------------------------------------------------------------------
-import pymongo
+#import pymongo
 
 #client
-client = pymongo.MongoClient("mongodb://localhost:27017/")
+#client = pymongo.MongoClient("mongodb://localhost:27017/")
 
 #DataBase
-db = client["CoCurricularApp"] 
+#db = client["CoCurricularApp"] 
 
 #collections
-student= db["student"] 
-faculty= db["faculty"]
-quotes=  db["quotes"]
+#student= db["student"] 
+#faculty= db["faculty"]
+#quotes=  db["quotes"]
 
 
 
@@ -37,12 +37,12 @@ def serve_static(filepath):
     return static_file(filepath,root=myroot)
 
 
-@get('/test')
-def test():
-    student.insert({"Name":"Deepak Raja","RollNo":"cb.en.u4cse16009","IsAdmin":True})
+#@get('/test')
+#def test():
+    #student.insert({"Name":"Deepak Raja","RollNo":"cb.en.u4cse16009","IsAdmin":True})
     #studentq=student.find({"Name:Deepak Raja"})
     #print(studentq)
-    return "Success!!"
+    #return "Success!!"
 
 @get('/login')
 def login():
