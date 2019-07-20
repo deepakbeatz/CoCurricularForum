@@ -36,6 +36,12 @@ def serve_static(filepath):
     myroot=os.path.join(root,"static")
     return static_file(filepath,root=myroot)
 
+	
+@get('/')
+def home():
+
+    return template('home')
+    
 
 #@get('/test')
 #def test():
@@ -66,12 +72,7 @@ def results():
 def results():
     return template('workshops')
 
-@get('/')
-@get('/home')
-def home():
 
-    return template('home')
-    
 
 
 #--------------------------------------------------------------------------------------------------
