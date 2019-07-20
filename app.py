@@ -9,18 +9,18 @@ root=os.getcwd()
 #------------------------------------------------------------------------------------------------
 #                                   DATABASE CONNECTIVITY
 #------------------------------------------------------------------------------------------------
-#import pymongo
+import pymongo
 
-#client
-#client = pymongo.MongoClient("mongodb://localhost:27017/")
+client
+client = pymongo.MongoClient("mongodb://localhost:27017/")
 
-#DataBase
-#db = client["CoCurricularApp"] 
+DataBase
+db = client["CoCurricularApp"] 
 
-#collections
-#student= db["student"] 
-#faculty= db["faculty"]
-#quotes=  db["quotes"]
+collections
+student= db["student"] 
+faculty= db["faculty"]
+quotes=  db["quotes"]
 
 
 
@@ -77,8 +77,8 @@ def results():
 
 #--------------------------------------------------------------------------------------------------
 #                                          SERVER
-#-------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------
 
 
-#run(host="localhost",port=8997,debug=True)
-run(host="0.0.0.0",port=int(os.environ.get('PORT',5400)))
+run(host="localhost",port=8997,debug=True)
+#run(host="0.0.0.0",port=int(os.environ.get('PORT',5400)))
