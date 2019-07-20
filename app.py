@@ -11,13 +11,10 @@ root=os.getcwd()
 #------------------------------------------------------------------------------------------------
 import pymongo
 
-client
 client = pymongo.MongoClient("mongodb://localhost:27017/")
 
-DataBase
 db = client["CoCurricularApp"] 
 
-collections
 student= db["student"] 
 faculty= db["faculty"]
 quotes=  db["quotes"]
